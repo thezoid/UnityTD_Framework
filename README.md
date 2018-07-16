@@ -5,12 +5,12 @@ A free, open source starting place for a tower defense built in Unity3D via C#
 This project contains all the essential components needed for the logic of a tower defense to work.
 This includes (non-exhaustive list):
 * Towers:
-⋅⋅* Machine Gun
-⋅⋅* Sniper
-⋅⋅* Splash
-⋅⋅* Chain
-⋅⋅* Laser (slow)
-⋅⋅* Laser (rampup)
+  * Machine Gun
+  * Sniper
+  * Splash
+  * Chain
+  * Laser (slow)
+  * Laser (rampup)
 * Tower build spots
 * Bullet handlers
 * Level Selection w/ progression
