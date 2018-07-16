@@ -1,0 +1,203 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!1001 &100100000
+Prefab:
+  m_ObjectHideFlags: 1
+  serializedVersion: 2
+  m_Modification:
+    m_TransformParent: {fileID: 0}
+    m_Modifications: []
+    m_RemovedComponents: []
+  m_SourcePrefab: {fileID: 0}
+  m_RootGameObject: {fileID: 1717653848047580}
+  m_IsPrefabAsset: 1
+--- !u!1 &1717653848047580
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 100100000}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 4134332407936464}
+  - component: {fileID: 114388372631511482}
+  - component: {fileID: 114521777792268144}
+  - component: {fileID: 114923743374205004}
+  - component: {fileID: 114866413289561822}
+  - component: {fileID: 114384980520488040}
+  m_Layer: 0
+  m_Name: Manager
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!4 &4134332407936464
+Transform:
+  m_ObjectHideFlags: 1
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 100100000}
+  m_GameObject: {fileID: 1717653848047580}
+  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
+  m_LocalPosition: {x: 0, y: 0, z: 0}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_Children: []
+  m_Father: {fileID: 0}
+  m_RootOrder: 0
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!114 &114384980520488040
+MonoBehaviour:
+  m_ObjectHideFlags: 1
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 100100000}
+  m_GameObject: {fileID: 1717653848047580}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: adfa3189e0d7f5442a7eda1fb0647830, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  pauseMenuUI: {fileID: 0}
+--- !u!114 &114388372631511482
+MonoBehaviour:
+  m_ObjectHideFlags: 1
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 100100000}
+  m_GameObject: {fileID: 1717653848047580}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 629ea0d8dbafbd34d8c63c2041377ea5, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  startingLives: 20
+  startingMoney: 400
+  moneyText: {fileID: 0}
+  livesText: {fileID: 0}
+  wavesText: {fileID: 0}
+  gameOverWavesText: {fileID: 0}
+  gameOverScreen: {fileID: 0}
+  gameIsOver: 0
+--- !u!114 &114521777792268144
+MonoBehaviour:
+  m_ObjectHideFlags: 1
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 100100000}
+  m_GameObject: {fileID: 1717653848047580}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 8db89625230e0ce40ad738303ff0ce12, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  selectedTower: {fileID: 1979230108749284, guid: dfdabe173944e8e499d1a024de617db8,
+    type: 2}
+--- !u!114 &114866413289561822
+MonoBehaviour:
+  m_ObjectHideFlags: 1
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 100100000}
+  m_GameObject: {fileID: 1717653848047580}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 1f29b42c3c5538a47a4169dc4b0ff535, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  spawnPoint: {fileID: 0}
+  timeBetweenWaves: 15
+  initialWaitTime: 20
+  waveCountdownText: {fileID: 0}
+  waves:
+  - waveComps:
+    - enemyPrefab: {fileID: 1866285009158330, guid: de4fb66b406444749829fc12d7e708c0,
+        type: 2}
+      num: 5
+      spawned: 0
+      spawnCD: 0.5
+    - enemyPrefab: {fileID: 1866285009158330, guid: a87c3d1d813cacb488b6fa74df6876af,
+        type: 2}
+      num: 1
+      spawned: 0
+      spawnCD: 0.5
+    - enemyPrefab: {fileID: 1866285009158330, guid: de4fb66b406444749829fc12d7e708c0,
+        type: 2}
+      num: 5
+      spawned: 0
+      spawnCD: 0.5
+    waveBonus: 0
+  - waveComps:
+    - enemyPrefab: {fileID: 1866285009158330, guid: a87c3d1d813cacb488b6fa74df6876af,
+        type: 2}
+      num: 5
+      spawned: 0
+      spawnCD: 0.5
+    waveBonus: 0
+  - waveComps:
+    - enemyPrefab: {fileID: 1866285009158330, guid: de4fb66b406444749829fc12d7e708c0,
+        type: 2}
+      num: 5
+      spawned: 0
+      spawnCD: 0.5
+    - enemyPrefab: {fileID: 1866285009158330, guid: fa66a7ecdaf09fd47b904369a01dd91d,
+        type: 2}
+      num: 1
+      spawned: 0
+      spawnCD: 1
+    - enemyPrefab: {fileID: 1866285009158330, guid: de4fb66b406444749829fc12d7e708c0,
+        type: 2}
+      num: 10
+      spawned: 0
+      spawnCD: 0.5
+    waveBonus: 0
+  - waveComps:
+    - enemyPrefab: {fileID: 1866285009158330, guid: fa66a7ecdaf09fd47b904369a01dd91d,
+        type: 2}
+      num: 3
+      spawned: 0
+      spawnCD: 1
+    - enemyPrefab: {fileID: 1866285009158330, guid: a87c3d1d813cacb488b6fa74df6876af,
+        type: 2}
+      num: 5
+      spawned: 0
+      spawnCD: 0.5
+    - enemyPrefab: {fileID: 1866285009158330, guid: de4fb66b406444749829fc12d7e708c0,
+        type: 2}
+      num: 10
+      spawned: 0
+      spawnCD: 0.5
+    waveBonus: 0
+  - waveComps:
+    - enemyPrefab: {fileID: 1866285009158330, guid: fa66a7ecdaf09fd47b904369a01dd91d,
+        type: 2}
+      num: 10
+      spawned: 0
+      spawnCD: 1
+    waveBonus: 0
+--- !u!114 &114923743374205004
+MonoBehaviour:
+  m_ObjectHideFlags: 1
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 100100000}
+  m_GameObject: {fileID: 1717653848047580}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 8ed0848430615d348abdd7e554b83145, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  selectedTower: {fileID: 0}
+  towerName: {fileID: 0}
+  range: {fileID: 0}
+  fireRate: {fileID: 0}
+  damage: {fileID: 0}
+  radius: {fileID: 0}
+  rangeCostTxt: {fileID: 0}
+  fireRateCostTxt: {fileID: 0}
+  damageCostTxt: {fileID: 0}
+  radiusCostTxt: {fileID: 0}
+  sellTxt: {fileID: 0}
+  rangeBTN: {fileID: 0}
+  fireRateBTN: {fileID: 0}
+  damageBTN: {fileID: 0}
+  radiusBTN: {fileID: 0}
+  sellBTN: {fileID: 0}
+  menuRoot: {fileID: 0}
+  selectedColor: {r: 0.20198467, g: 0.7627139, b: 0.8396226, a: 1}
+  costMultiplier: 1.25
+  upgradeMultiplier: 1.05
+  worthModifier: 0.6666667
