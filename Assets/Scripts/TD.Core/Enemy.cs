@@ -100,6 +100,7 @@ namespace TD.Core
         {
             Destroy(gameObject);
             PlayerStats.instance.LoseLife();
+            EnemySpawner.instance.enemiesOnLevel--;
         }
 
         /// <summary>
