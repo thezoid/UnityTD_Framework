@@ -1,5 +1,9 @@
 # UnityTD_Framework
-A free, open source starting place for a tower defense built in Unity3D via C#
+A free, open source starting place for a tower defense built in Unity3D via C#.
+
+Currently built to Unity version: [2018.2.0f2](https://unity3d.com/get-unity/download/archive)
+
+It's recommended to use Unity Hub so it is easier to swap between versions of Unity.
 
 # What's Included
 This project contains all the essential components needed for the logic of a tower defense to work.
